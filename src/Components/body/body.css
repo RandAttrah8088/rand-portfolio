@@ -1,0 +1,58 @@
+.rand {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+  }
+  
+  .rand img {
+    width: auto;
+    height:250px;
+    border-radius: 30px;
+    margin-top: 150px;
+  }
+  .rand h1 {
+    text-align: center;
+    width: 70%;
+    font-size: 70px;
+    font-weight: 500;
+  }
+  .rand h1 span {
+    background: linear-gradient(270deg, #9395d3 10%, #eb5e28 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .rand p {
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 50px;
+  }
+  .rand-connect {
+    padding: 25px 45px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #9395d3 -5.09%, #eb5e28 106.28%);
+    cursor: pointer;
+  }
+  .resume {
+    padding: 25px 75px;
+    border-radius: 50px;
+    border: 2px solid white;
+    cursor: pointer;
+  }
+  .rand-connect:hover {
+    border: 2px solid white;
+  }
+  
+  .resume:hover {
+    border-color: #eb5e28;
+  }
