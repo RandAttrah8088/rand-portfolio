@@ -6,33 +6,34 @@
     gap: 80px;
     margin: 80px 170px;
 }
-.title{
+.pro-title{
     position: relative;
 }
-.title h1{
+.pro-title h1{
     padding: 0px 30px;
     font-size: 80px;
     font-weight: 500;
 }
-.title img{
+.pro-title img{
+    height: 230px;
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: -1;
 }
-.container{
+.pro-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
 }
-.container img{
+.pro-container img{
     box-sizing: border-box;
     width: 419px;
     height: 280px;
     transition: 0.3s;
     cursor: pointer;
 }
-.container img:hover{
+.pro-container img:hover{
     transform:scale(1.10) ;
     border: 4px solid #eb5e28;
     border-radius: 10px;

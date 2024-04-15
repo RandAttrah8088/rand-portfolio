@@ -6,12 +6,12 @@ import arrow_icon from '../../assets/arrow_icon.svg'
 
 const Projects = () => {
   return (
-    <div className='projects'>
-    <div className='title'>
+    <div id='projects' className='projects'>
+    <div className='pro-title'>
         <h1>My Projects</h1>
         <img src={patternlogo} alt=''/>
     </div>
-     <div className='container'>
+     <div className='pro-container'>
       {mywork_data.map((project,index)=>{
         return <img key={index} src={project.w_img} alt=''/>
       })}

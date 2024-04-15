@@ -1,0 +1,61 @@
+.footer{
+    margin: 50px 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-left p{
+    font-size: 20px;
+    max-width: 400px;
+
+}
+.footer-right{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.email{
+    display:flex;
+    gap: 30px;
+    padding: 20px 30px;
+    border-radius: 50px;
+    background: #aab2ff;
+    padding-right: 80px;
+}
+.email input{
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #eca0ff;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 18px;
+}
+.subscribe{
+    border-radius: 50px;
+    background: linear-gradient(264deg, #9395d3 -5.09%, #eb5e28 106.28%);
+    font-size: 20px;
+    padding: 22px 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.bottom-right{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.email:hover{
+    border: 2px solid white ;
+}
+.subscribe:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
