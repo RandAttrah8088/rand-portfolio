@@ -1,0 +1,322 @@
+//index.css
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  height: 100vh;
+  background:#14213D;
+  color: white;
+  font-family:"Josefin Sans", sans-serif;
+}
+
+//App.jsx
+
+import Navbar from './Components/Navbar/navbar'
+import Rand from './Components/Rand/rand'
+import About from './Components/About/about'
+
+
+const App = () => {
+  return (
+    <div>
+      <Navbar/> 
+      <Rand/>
+      <About/>
+    </div>
+  )
+}
+
+export default App
+
+//navbar.jsx
+import './navbar.css'
+import RandLogo from '../../assets/RandLogo.png'
+const Navbar = () => {
+  return (
+    <div className='navbar'>
+      <img src={RandLogo} className='nav-img' alt=''/>
+      <ul className='menu'>
+        <li>Home</li>
+        <li>About Me</li>
+        <li>Services</li>
+        <li>Portfolio</li>
+        <li>Contact</li>
+      </ul>
+      <div className='connect'>Connect Me</div>
+    </div>
+  )
+}
+
+export default Navbar
+
+//navbar.css
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+}
+.menu{
+   display: flex;
+   align-items: center;
+   list-style: none; 
+   gap: 60px;
+   font-size: 20px;
+
+}
+.connect{
+   padding: 20px 40px; 
+   border-radius: 50px;
+   background: linear-gradient(267deg,#9395D3 0.36%,#EB5E28 102.06%);
+   font-size: 22px;
+   cursor: pointer;
+   transition:0.5s ;
+}
+.connect:hover{
+    transform: scale(1.05);
+} 
+.nav-img{
+    width: 250px;
+
+}
+
+//rand.jsx
+import './rand.css'
+import randh from '../../assets/randh.png'
+
+const Rand = () => {
+  return (
+    <div className='rand'>
+     <img src={randh} alt=''/>
+      <h1><span> Hi.. This is Rand Attrah,</span> FrontEnd Developer based in the United States. </h1>
+       <p>Front-End Web Development Course, 2023. 2024, Developed and contributed to
+        various projects utilizing HTML, CSS, JavaScript, and ReactJs, showcased on GitHub:</p>
+      <div className='actions'>
+       <div className='rand-connect'>Contact Me</div> 
+       <div className='resume'>My Resume</div>
+    </div>
+    </div>
+  )
+}
+
+export default Rand
+
+//rand.css
+.rand {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.rand img {
+  margin-top: 150px;
+}
+.rand h1 {
+  text-align: center;
+  width: 70%;
+  font-size: 70px;
+  font-weight: 500;
+}
+.rand h1 span {
+  background: linear-gradient(270deg, #9395d3 10%, #eb5e28 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.rand p {
+  width: 50%;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.rand-connect {
+  padding: 25px 45px;
+  border-radius: 50px;
+  background: linear-gradient(264deg, #9395d3 -5.09%, #eb5e28 106.28%);
+  cursor: pointer;
+}
+.resume {
+  padding: 25px 75px;
+  border-radius: 50px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.rand-connect:hover {
+  border: 2px solid white;
+}
+
+.resume:hover {
+  border-color: #eb5e28;
+}
+
+//about.css
+
+import "./about.css";
+import randh from "../../assets/randh.png";
+import patternlogo from "../../assets/patternlogo.png";
+
+const About = () => {
+  return (
+    <div className="about">
+      <div className="about-title">
+        <h1>About Me</h1>
+        <img src={patternlogo} alt="pattern pic" />
+      </div>
+      <div className="about-sections">
+        <div className="about-left">
+          <img src={randh} alt="myphoto" />
+        </div>
+        <div className="about-right">
+          <div className="about-para">
+            <p>
+              Aspiring Front-End Web Developer proficient in HTML, CSS, and
+              JavaScript
+            </p>
+            <p>
+              Developed and contributed to various projects utilizing HTML, CSS,
+              JavaScript, and ReactJs,
+            </p>
+          </div>
+          <div className="about-skills">
+            <div className="about-skill">
+              <p>HTML & CSS</p>
+              <hr style={{ width: "50%" }}></hr>
+            </div>
+            <div className="skill">
+              <p>Java Script</p>
+              <hr style={{ width: "70%" }}></hr>
+            </div>
+            <div className="skill">
+              <p>React JS</p>
+              <hr style={{ width: "60%" }}></hr>
+            </div>
+            <div className="skill">
+              <p>jQuery</p>
+              <hr style={{ width: "50%" }}></hr>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="about-achivements">
+        <div className="about-achivement">
+          <h1>5+</h1>
+          <p>Years Of Experience</p>
+        </div>
+        <hr/>
+        <div className="about-achivement">
+          <h1>60+</h1>
+          <p>Project Completed</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;
+//about.css
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+  }
+  .about-title{
+    position: relative;
+  }
+  .about-title h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+  }
+  .about-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+  .about-sections{
+    display: flex;
+    gap: 80px;
+  }
+  .about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+  .about-para {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .about-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .about-skill {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    transition: 0.3s;
+  }
+  .about-skill p {
+    min-width: 150px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .about-skill hr {
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 8px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #9395d3 -5.09%, #eb5e28 106.28%);
+  }
+  .about-achivements {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 80px;
+  }
+  .about-achivement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: 0.5s;
+  }
+  .about-achivement h1 {
+    font-size: 60px;
+    font-weight: 600;
+    background: linear-gradient(270deg, #9395d3 50.41%, #eb5e28 90.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .about-achivement p {
+    font-size: 22px;
+    font-weight: 300;
+  }
+  .skill:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+  .about-achivement:hover {
+    transform: scale(1.12);
+    transition: 0.5s;
+  }
+  
