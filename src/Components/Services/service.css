@@ -6,15 +6,15 @@
     gap: 80px;
     margin: 80px 170px;
 }
-.title{
+.ser-title{
     position: relative;
 }
-.title h1{
+.ser-title h1{
    padding: 0px 30px;
    font-size: 80px;
    font-weight: 500; 
 }
-.title img{
+.ser-title img{
     height: 230px;
     position: absolute;
     bottom: 0;
@@ -32,7 +32,7 @@
     transition: 0.5s;
     cursor: pointer;
 }
-.container{
+.ser-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
@@ -65,4 +65,40 @@
     background-image: linear-gradient(45deg,#84ffc9,#aab2ff,#eca0ff);
     transform: scale(1.05);
     transition: 0.3s;
+}
+@media(max-width:768px){
+    .services{
+        align-items: start;
+        gap: 70px;
+        margin: 20px 70px;
+    }
+    .ser-title h1{
+        font-size: 50px;
+        padding: 0;
+        font-weight: 500;
+    }
+    .ser-title img{
+            width: 150px;
+            height: 130px;
+           margin-right: -20px;
+    }
+    .format{
+        gap: 20px;
+        padding: 32px;
+    }
+    .format h2{
+        font-size: 20px;
+    }
+    .format p{
+        font-size: 18px;
+        line-height: 32px;
+        max-width: 300px;
+    }
+    .readmore img{
+        width: 20px;
+    }
+    .ser-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
 }

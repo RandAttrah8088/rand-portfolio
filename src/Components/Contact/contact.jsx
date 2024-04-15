@@ -31,34 +31,34 @@ const Contact = () => {
   
   return (
     <div id='contact' className='contact'>
-    <div className='title'>
+    <div className='con-title'>
         <h1>Contact Me</h1>
         <img src={patternlogo} alt=''/>
     </div>
-    <div className='sections'>
-     <div className='left'>
+    <div className='con-sections'>
+     <div className='con-left'>
         <h1>Lets Communicate</h1>
         <p>Hi,This is Rand, I am Open For New Exciting Projects,Feel Free To Contact Me Anytime. </p>
-        <div className='details'>
-        <div className='detail'>
+        <div className='con-details'>
+        <div className='con-detail'>
          <img src={mail_icon} alt=''/><p>rand.h.attrah@gmail.com</p>
         </div>
-        <div className='detail'>
+        <div className='con-detail'>
          <img src={location_icon} alt=''/><p>AZ,United States</p>
         </div>
-        <div className='detail'>
+        <div className='con-detail'>
          <img src={call_icon} alt=''/><p>+6024005611</p>
         </div>
         </div>
      </div>
-     <form onSubmit={onSubmit} className='right'>
+     <form onSubmit={onSubmit} className='con-right'>
         <label htmlFor=''>Your Name</label>
         <input type='text' placeholder='Enter Your Name'/>
         <label htmlFor=''>Your Email</label>
         <input type='email' placeholder='Enter Your Email'/>
         <label htmlFor=''> Write Your Message</label>
         <textarea name='message'  rows="8" placeholder='Enter Your Message'></textarea>
-        <button type='submit' className='submit'>Submit</button>
+        <button type='submit' className='con-submit'>Submit</button>
      </form>
 
     </div> 

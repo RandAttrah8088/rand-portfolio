@@ -6,11 +6,11 @@ import arrow_icon from '../../assets/arrow_icon.svg'
 const Service = () => {
   return (
     <div id='services' className='services'>
-      <div className='title'>
+      <div className='ser-title'>
         <h1>My Services</h1>
         <img src={patternlogo} alt=''/>
       </div>
-      <div className='container'>
+      <div className='ser-container'>
         {Services_Data.map((service,index)=>{
 
           return <div key={index} className='format'>

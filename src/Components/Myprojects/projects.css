@@ -16,7 +16,7 @@
 }
 .pro-title img{
     height: 230px;
-    position: absolute;
+    position:absolute;
     bottom: 0;
     right: 0;
     z-index: -1;
@@ -55,4 +55,35 @@
 .showmore:hover{
     gap: 30px;
     transition: 0.5s;
+}
+@media(max-width:768px){
+    .projects{
+        gap: 50px;
+        margin: 50px 70px;
+        align-items: start;
+    }
+    .pro-title h1{
+        font-size: 50px;
+        padding: 0;
+        font-weight: 500;
+    }
+    .pro-title img{
+        width: 150px;
+        height: 130px;
+       margin-right: -20px;
+    }
+    .pro-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .pro-container img{
+        width: 100%;
+        height: 100%;
+    }
+    .showmore{
+        padding: 20px 40px;
+        font-size: 18px;
+        margin: 50px auto;
+        cursor: pointer;
+    }
 }
