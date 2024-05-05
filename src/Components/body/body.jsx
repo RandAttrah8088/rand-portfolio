@@ -2,6 +2,7 @@ import React from 'react'
 import './body.css'
 import randh from '../../assets/randh.png'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import my_resume from '../../assets/MyResume'
 
 const Body = () => {
   return (
@@ -12,7 +13,11 @@ const Body = () => {
        various projects utilizing HTML, CSS, JavaScript, and ReactJs, showcased on GitHub:https://github.com/RandAttrah8088</p>
      <div className='actions'>
       <div className='rand-connect'><AnchorLink className='anchor' offset={50} href='#contact'>Contact Me </AnchorLink></div> 
-      <div className='resume'>My Resume</div>
+      {my_resume.map((resume, index) => (
+          <div className='resume' key={index}>
+            <a href={resume.github_repo} target="_blank" rel="noopener noreferrer">My Resume</a>
+          </div>
+        ))}
    </div>
    </div>
   )

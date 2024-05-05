@@ -7,8 +7,10 @@ import Projects from './Components/Myprojects/projects'
 import Contact from './Components/Contact/contact'
 import Footer from './Components/Footer/footer'
 
+
 const App = () => {
   return (
+    
     <div>
       <Navbar/>
       <Body/>
@@ -18,6 +20,8 @@ const App = () => {
       <Contact/>
       <Footer/>
     </div>
+    
+
   )
 }
 

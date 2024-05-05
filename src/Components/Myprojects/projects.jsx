@@ -13,7 +13,13 @@ const Projects = () => {
     </div>
      <div className='pro-container'>
       {mywork_data.map((project,index)=>{
-        return <img key={index} src={project.w_img} alt=''/>
+        return <div className='mywork' key={index}>
+          <h2>{project.w_name}</h2> 
+          <a href={project.github_repo} target="_blank" rel="noopener noreferrer">
+        <img key={index} src={project.w_img} alt=''/>
+        </a>
+        </div>
+    
       })}
      </div> 
      <div className='showmore'>

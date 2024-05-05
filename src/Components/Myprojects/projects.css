@@ -39,6 +39,10 @@
     border-radius: 10px;
     transition: 0.3s;
 }
+.mywork h2{
+    margin: 13px 0;
+
+}
 .showmore{
     display: flex;
     gap: 15px;
